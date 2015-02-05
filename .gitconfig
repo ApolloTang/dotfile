@@ -1,0 +1,30 @@
+[user]
+    name = Apollo Tang
+    email = tang.apollo@gmail.com
+[color]
+    ui = auto
+[push]
+    default = simple
+[core]
+	excludesfile = /Users/apollotang/.gitignore_global
+    editor = mvim --nofork
+[merge]
+    tool = kdiff3
+[mergetool "kdiff3"]
+    path = /usr/local/bin/kdiff3
+    keepBackup = false
+    trustExitCode = false
+[diff]
+    external = extDiff
+[alias]
+    co = checkout
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
