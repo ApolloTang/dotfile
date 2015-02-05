@@ -8,6 +8,8 @@ ln -s ~/configuration/dotfile/.gitignore_global
 ln -s ~/configuration/dotfile/.Xresources
 ln -s ~/configuration/dotfile/.jshintrc
 
+ln -s ~/configuration/dotfile/.vimrc
+
 ln -s ~/configuration/dotfile/.profile
 ln -s ~/configuration/dotfile/.bash_profile
 
