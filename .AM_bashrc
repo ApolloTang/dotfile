@@ -2,8 +2,8 @@
 
 ## Read mechine depend external .bashrc ----------------------------------
 
-if [ -f ~/.bashrc_lights ]; then
-    . ~/.bashrc_lights
+if [ -f ~/.bashrc_AM ]; then
+    . ~/.bashrc_AM
 fi
 
 ## Variable --------------------------------------------------------------
