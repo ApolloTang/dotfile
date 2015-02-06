@@ -1,20 +1,27 @@
 cd ~
+
 ln -s ~/configuration/dotfile/.bashrc
 ln -s ~/configuration/dotfile/.bashrc_lights
+
 ln -s ~/configuration/dotfile/.bash_aliases
+
 ln -s ~/configuration/dotfile/.bash_aliases_lights
+
 ln -s ~/configuration/dotfile/.gitconfig
 ln -s ~/configuration/dotfile/.gitignore_global
+
 ln -s ~/configuration/dotfile/.Xresources
 ln -s ~/configuration/dotfile/.jshintrc
 
 ln -s ~/configuration/dotfile/.vimrc
 
 ln -s ~/configuration/dotfile/.profile
+
 ln -s ~/configuration/dotfile/.bash_profile
 
-
 ln -s ~/configuration/dotfile/.bash_aliases_svn
+
+
 
 ln -s ~/configuration/dotfile/.AM_bashrc .bashrc
 ln -s ~/configuration/dotfile/.AM_bash_profile .bash_profile
