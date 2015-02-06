@@ -16,7 +16,7 @@ ln -s ~/configuration/dotfile/.bash_profile
 
 ln -s ~/configuration/dotfile/.bash_aliases_svn
 
-
-
+ln -s ~/configuration/dotfile/.AM_bashrc .bashrc
+ln -s ~/configuration/dotfile/.AM_bash_profile .bash_profile
 
 
