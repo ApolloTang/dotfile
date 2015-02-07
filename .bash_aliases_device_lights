@@ -1,4 +1,4 @@
-echo '.bash_aliases_device_lights'
+#echo '.bash_aliases_device_lights'
 ################################################
 #
 #/ Change Directories -----------------------------------------------------------
@@ -23,4 +23,4 @@ alias nim3g="less $d_conf/nimbus/ideas3.txt  | grep "
 
 
 ################################################
-echo '.bash_aliases_device_lights reading done'
+#echo '.bash_aliases_device_lights reading done'

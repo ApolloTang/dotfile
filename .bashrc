@@ -1,4 +1,4 @@
-echo '.bashrc reading'
+#echo '.bashrc reading'
 ##################################################################
 
 # See following for more information: http://www.infinitered.com/blog/?p=19
@@ -175,4 +175,4 @@ if [ -f ~/.bash_aliases_device ]; then
 fi
 
 ##################################################
-echo '.bashrc reading done'
+#echo '.bashrc reading done'
