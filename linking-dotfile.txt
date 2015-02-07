@@ -1,3 +1,8 @@
+
+
+find . -name ".*" -type l -maxdepth 1 -exec ls -al {} +
+
+---------------------------------------------------
 cd ~
 
 ln -s ~/configuration/dotfile/.profile

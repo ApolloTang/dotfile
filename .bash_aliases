@@ -121,5 +121,10 @@ alias vim-c-save='cp /Users/apollotang/.vim/colors/apollotang.vim $d_conf/vimrc/
 alias vim-c-diff='diff $d_conf/vimrc/apollotang.vim /Users/apollotang/.vim/colors/apollotang.vim'
 
 
+#--------------------------------------------------------------------------
+#list dot files
+alias find_ln_dotfile='find . -name ".*" -type l -maxdepth 1 -exec ls -al {} +'
+
+
 ################################################
 #echo '.bash_aliases done reading'
