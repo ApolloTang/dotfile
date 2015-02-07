@@ -1,0 +1,14 @@
+#echo '.bashrc_init_lights reading'
+###################################
+
+export IAM=lights
+export PLATFORM=mac
+
+## Directories -----------------------------------------------------------
+export dir_template=/Users/apollotang/Aa/00s/05hw/_A1/re-useable/template
+
+#/ Directories -----------------------------------------------------------
+export d_conf=/Users/apollotang/configuration/
+
+###################################
+#echo '.bashrc_init_lights reading done'

@@ -1,7 +1,7 @@
-#echo 'reading .bashrc_lights'
+echo 'reading .bashrc_AM'
 ###################################
 
-export IAM=lights
+export IAM=AM
 export PLATFORM=mac
 
 ## Directories -----------------------------------------------------------
@@ -11,5 +11,5 @@ export dir_template=/Users/apollotang/Aa/00s/05hw/_A1/re-useable/template
 export d_conf=/Users/apollotang/configuration/
 
 ###################################
-#echo 'done reading .bashrc_lights'
+echo 'done reading .bashrc_AM'
 

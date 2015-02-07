@@ -1,9 +1,12 @@
+echo '.bashrc reading'
+##################################################################
+
 # See following for more information: http://www.infinitered.com/blog/?p=19
 
 ## Read mechine depend external .bashrc ----------------------------------
 
-if [ -f ~/.bashrc_lights ]; then
-    . ~/.bashrc_lights
+if [ -f ~/.bashrc_init ]; then
+    . ~/.bashrc_init
 fi
 
 ## Variable --------------------------------------------------------------
@@ -167,9 +170,9 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 
-if [ -f ~/.bash_aliases_lights ]; then
-    . ~/.bash_aliases_lights
+if [ -f ~/.bash_aliases_device ]; then
+    . ~/.bash_aliases_device
 fi
 
 ##################################################
-# echo '.bashrc done reading'
+echo '.bashrc reading done'
