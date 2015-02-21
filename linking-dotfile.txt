@@ -41,4 +41,9 @@ ln -s ~/configuration/dotfile/.bashrc_AM .bashrc_AM
 
 
 
+------ note ------
+todelete :
+.AM_bash_profile
+.AM_bashrc
+
 

@@ -127,4 +127,4 @@ alias find_ln_dotfile='find . -name ".*" -type l -maxdepth 1 -exec ls -al {} +'
 
 
 ################################################
-#echo '.bash_aliases done reading'
+#echo '.bash_aliases reading done'
