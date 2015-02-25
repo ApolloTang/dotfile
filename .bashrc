@@ -165,6 +165,10 @@ export CLEANUP=0                     # don't clean up
 
 ## Read external aliases -------------------------------------------------
 
+if [ -f ~/.bashrc_device ]; then
+    . ~/.bashrc_device
+fi
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -173,6 +177,8 @@ fi
 if [ -f ~/.bash_aliases_device ]; then
     . ~/.bash_aliases_device
 fi
+
+
 
 ##################################################
 #echo '.bashrc reading done'
