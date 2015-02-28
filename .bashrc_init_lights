@@ -6,7 +6,7 @@ export PLATFORM=mac
 
 ## Directories -----------------------------------------------------------
 export dir_template=/Users/apollotang/Aa/2-git-repo/mirror-to-github/re-useable/template/
-export dir_server_lib=/Users/apollotang/opts/vendor-lib/
+export dir_server_lib=/Users/apollotang/opt/vendor-lib/
 
 #/ Directories -----------------------------------------------------------
 export d_conf=/Users/apollotang/configuration/
