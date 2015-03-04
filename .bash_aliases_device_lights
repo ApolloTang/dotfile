@@ -17,8 +17,8 @@ alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 
 #/ Note -----------------------------------------------------------------
 
-alias nim3='cd $d_conf/nimbus && less ideas3.txt'
-alias nim3g="less $d_conf/nimbus/ideas3.txt  | grep "
+alias nim1='cd $d_conf/nimbus && less ideas_01.txt'
+alias nim1g="less $d_conf/nimbus/ideas_01.txt  | grep "
 
 
 
