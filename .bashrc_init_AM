@@ -6,7 +6,7 @@ export PLATFORM=mac
 
 ## Directories -----------------------------------------------------------
 export dir_template=/Users/apollo/dev2/re-useable/template/
-export dir_server_lib=/Users/apollotang/opt/vendor-lib/
+export dir_server_lib=/Users/apollo/opt/vendor-lib/
 
 #/ Directories -----------------------------------------------------------
 export d_conf=/Users/apollotang/configuration/
