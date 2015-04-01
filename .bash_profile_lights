@@ -112,7 +112,6 @@ fi
 # see: http://code-worrier.com/blog/autocomplete-git/
 
 if [ -f ~/opt/script/git-completion.bash ]; then
-    echo 'git-completion.bash soruce'
   . ~/opt/script/git-completion.bash
 fi
 
