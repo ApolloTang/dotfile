@@ -94,6 +94,15 @@ source ~/.bashrc
 #AM export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+##
+# Start -  git completion
+# see: http://code-worrier.com/blog/autocomplete-git/
+
+if [ -f ~/opt/script/git-completion.bash ]; then
+  . ~/opt/script/git-completion.bash
+fi
+
+# End  -  git completion
 
 
 
