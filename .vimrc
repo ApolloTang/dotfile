@@ -605,6 +605,8 @@ nmap <C-Down> ]e`[            " Bubling down one line
 " }
 
 
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/generated-public/*,*/node_modules/*
+" Windows ('noshellslash')
 
 " END .vimrc
 
