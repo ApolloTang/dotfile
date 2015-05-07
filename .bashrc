@@ -163,6 +163,10 @@ export CLEANUP=0                     # don't clean up
 #      [note] DO NOT SET GIT_EXTERNAL_DIFF. IF YOU DO git-diffc WILL NOT WORK
 
 
+## color for Less --------------------------------------------------------
+export=LESS=-RFX
+
+
 ## Read external aliases -------------------------------------------------
 
 if [ -f ~/.bashrc_device ]; then
