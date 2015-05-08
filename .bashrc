@@ -164,7 +164,7 @@ export CLEANUP=0                     # don't clean up
 
 
 ## color for Less --------------------------------------------------------
-export=LESS=-RFX
+export LESS=-RFX
 
 
 ## Read external aliases -------------------------------------------------
