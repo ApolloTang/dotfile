@@ -2,6 +2,14 @@
 ###################################
 
 
+## Path ------------------------------------------------------------------
+
+# @NOTE: reverse order: the last one will be prepended to the path
+PATH="$HOME/Applications/kdiff3.app/Contents/MacOS":$PATH   # kdiff3
+# @NOTE: normal order: the last one will be appended to the path
+#PATH=$PATH:"$HOME/Applications/kdiff3.app/Contents/MacOS"
+export PATH
+
 ###################################
 #echo 'done reading .bashrc_AM'
 
