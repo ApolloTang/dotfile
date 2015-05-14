@@ -29,7 +29,9 @@ alias df='df -h'
 alias ..='cd ..'
 alias ...='cd .. ; cd ..'
 
-### git
+# ------------------------------------------------------------------
+# git
+#
 alias gst='git status'
 alias gpl='git pull'
 alias gps='git push'
@@ -40,20 +42,17 @@ alias gba='git branch -a'
 alias gmt='git mergetool --tool p4merge'
 alias gdf='git diff --no-ext-diff'
 
-alias glg='git log --graph --all --oneline --decorate'
-alias gld="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(cyan) %cD %Creset %s\""
-alias glr='git log --all --oneline --decorate --reverse'
-
 alias glgl='git log --graph --all --oneline --decorate'
-alias glrl='git log --all --oneline --decorate --reverse'
-alias gll='git log --all --oneline --decorate'
-alias gldl="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(cyan) %cD %Creset %s\""
-
 alias glg='git log --graph --all --oneline --decorate -15'
-alias glr='git log --all --oneline --decorate --reverse -15'
-alias gl='git log --all --oneline --decorate -15 '
-alias gld="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(cyan) %cD %Creset %s\" -15"
 
+alias glrl='git log --all --oneline --decorate --reverse'
+alias glr='git log --all --oneline --decorate --reverse -15'
+
+alias gll='git log --all --oneline --decorate'
+alias gl='git log --all --oneline --decorate -15 '
+
+alias gldl="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(cyan) %cD %Creset %s\""
+alias gld="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(cyan) %cD %Creset %s\" -15"
 
 
 #/  Utitlities -----------------------------------------------------------
@@ -63,7 +62,7 @@ alias aliasg="alias | grep "
 #/ the "kp" alias ("que pasa")
 alias kp="ps auxwww"
 
-#/ using sed to buid dir tree  http://www.centerkey.com/tree/
+#/ using sed to build dir tree  http://www.centerkey.com/tree/
 alias sed-tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 
 #/ Split path into line -------------------------------------------------
