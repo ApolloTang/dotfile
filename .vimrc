@@ -80,7 +80,6 @@ call pathogen#infect()
     let maplocalleader="\\"                 "\ leader that targat specific file type
 
     inoremap <leader><leader> <Esc>hhhh     "\ back to normal mode; the 4h (hhhh) fix cusor jump around
-    imap <c-c> <esc>                        "\ undecided about if I sould keep this
 
     syntax enable                           " Turn on syntax highlighting.
     filetype plugin indent on               " Turn on file type detection.
