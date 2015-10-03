@@ -102,6 +102,7 @@ call pathogen#infect()
 
     set number                              " Show line numbers.
     set ruler                               " Show cursor position.
+    set relativenumber                      " use relative number
 
     set incsearch                           " Highlight matches as you type.
     set hlsearch                            " Highlight matches.
@@ -490,11 +491,21 @@ nmap <C-Down> ]e`[            " Bubling down one line
 " }
 
 " Novice arrow disable { --------------------------------------------------
-    map <Left>  :echo "             do not use arrow key!"<cr>
-    map <Right> :echo "             do not use arrow key!"<cr>
-    map <Up>    :echo "             do not use arrow key!"<cr>
-    map <Down>  :echo "             do not use arrow key!"<cr>
+    " map <Left>  :echo "             do not use arrow key!"<cr>
+    " map <Right> :echo "             do not use arrow key!"<cr>
+    " map <Up>    :echo "             do not use arrow key!"<cr>
+    " map <Down>  :echo "             do not use arrow key!"<cr>
 " }
+
+
+" search and replace helper  { --------------------------------------------
+    noremap ;' :%s:::g<Left><Left><Left>
+    noremap ;; :%s:::cg<Left><Left><Left><Left>
+    "/ These mappings save you some keystrokes and put you where you start typing
+    "/ your search pattern. After typing it you move to the replacement part , type
+    "/ it and hit return. The second version adds confirmation flag.
+" }
+
 
 " Stuff to figure out { --------------------------------------------------
     """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
