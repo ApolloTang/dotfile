@@ -314,8 +314,10 @@ command! W :wa
 
 " ## Wrapping behaviour { ------------------------------------------------
     set nowrap nolinebreak list
-    nmap <s-k> zl  "scroll left"
-    nmap <s-j> zh  "scroll right"
+    "/ No scrolling for now, need a solution, because H and L is need from
+    "/ frequently
+        " nmap <s-l> zl  "scroll left
+        " nmap <s-h> zh  "scroll right
     command! -nargs=* Wrapword set wrap linebreak nolist
     command! -nargs=* Wrap set wrap list
     command! -nargs=* Wrapoff set nowrap nolinebreak list
