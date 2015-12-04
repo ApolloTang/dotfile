@@ -381,6 +381,11 @@ command! W :wa
 " Inserting stuff { --------------------------------------------------------
     " ## Insert a hash rocket with <c-l>l
     imap <c-l>l <space>=><space>
+
+    "/ == Digraph remapping ==
+    "/ Since <c-k> has inoremap to insert mode's movement
+    "/ for a list of digraph-key type ":help digraph-table-mbyte"
+    inoremap <leader>k <c-k>
 "}
 
 " Clear the search buffer when hitting return
@@ -400,6 +405,7 @@ inoremap <leader>o <esc>o
 " Open line (normal mode)
 nnoremap <leader>O O<esc>
 nnoremap <leader>o o<esc>
+
 
 
 " insert mode movements
