@@ -142,6 +142,11 @@ call pathogen#infect()
     set tm=500
     "/ disable bell in mac. http://stackoverflow.com/questions/16047146/disable-bell-in-macvim
     autocmd! GUIEnter * set vb t_vb=
+
+
+    "/ rainbow:  https://github.com/luochen1990/rainbow
+    "let g:rainbow_active = 0 "0 if you want to enable it later via :RainbowToggle
+
 " }
 
 " Colors and fonts {
