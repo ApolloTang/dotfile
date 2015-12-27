@@ -133,7 +133,10 @@ call pathogen#infect()
     set list listchars=tab:·\ ,trail:·
 
     "\ Status information at bottom of screen
-    set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+    " set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+    set statusline=%n\|%<%.99f\ %=%10(%H%W%M%R\/%l\/%c\/%v\%)
+
+
 
     " No sound on errors
     set noerrorbells
@@ -394,9 +397,9 @@ command! W :wa
 
 
 " Map braces and brackets
-imap [ []<left>
-imap ( ()<left>
-imap { {}<left>
+" imap [ []<left>
+" imap ( ()<left>
+" imap { {}<left>
 
 
 " Open line (insert mode)
