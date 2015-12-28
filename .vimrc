@@ -309,8 +309,8 @@ command! W :wa
 
 " window { ---------------------------------------------------------------
     " ##  Window resizing
-    nnoremap <leader>ww 75<c-w>>
-    nnoremap <leader>nn 75<c-w><
+    nnoremap <leader>ww 30<c-w>>
+    nnoremap <leader>nn 30<c-w><
 
     " ## Move around splits
     nnoremap <c-j> <c-w>j
