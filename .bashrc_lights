@@ -9,7 +9,7 @@ PATH="$HOME/Applications/kdiff3.app/Contents/MacOS":$PATH   # kdiff3
 ##
 ## @NOTE: normal order: the last one will be appended to the path
 ##
-#PATH=$PATH:"$HOME/Applications/kdiff3.app/Contents/MacOS"
+PATH=$PATH:"/usr/local/Cellar/neovim-dot-app/HEAD/bin/gnvim"
 export PATH
 
 ## for nvm

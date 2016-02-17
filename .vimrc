@@ -312,6 +312,9 @@ command! W :wa
     nnoremap <leader>ww 30<c-w>>
     nnoremap <leader>nn 30<c-w><
 
+    nnoremap <leader>www 30<c-w>+
+    nnoremap <leader>nnn 30<c-w>-
+
     " ## Move around splits
     nnoremap <c-j> <c-w>j
     nnoremap <c-k> <c-w>k
