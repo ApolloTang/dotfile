@@ -117,7 +117,6 @@ call pathogen#infect()
     set noswapfile                          " no swap files
     "set directory=$HOME/.vim/tmp//,.       " Keep swap files in one location
 
-    set laststatus=2                        " Show the status line all the time
 
     set nocursorline                        " do not show cursor line
     set cmdheight=2
@@ -132,10 +131,24 @@ call pathogen#infect()
     set encoding=utf-8
     set list listchars=tab:·\ ,trail:·
 
+
+    "\ ---------------
+    "\  Status
+    "\ ---------------
+    set laststatus=2                        " Show the status line all the time
+
     "\ Status information at bottom of screen
     " set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
     set statusline=%n\|%<%.99f\ %=%10(%H%W%M%R\/%l\/%c\/%v\%)
 
+    "\ Status line color based on mode
+    "\ Ref: http://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-colour
+    if version >= 700
+      au InsertEnter * hi StatusLine cterm=bold,reverse ctermbg=2 ctermfg=15 gui=bold,reverse guifg=gray50 guibg=cyan
+      au InsertLeave * hi StatusLine cterm=bold,reverse ctermbg=0 ctermfg=15 gui=bold,reverse guifg=gray50 guibg=black
+    endif
+    "\ Color: ref
+    " http://vimdoc.sourceforge.net/htmldoc/syntax.html#:highlight
 
 
     " No sound on errors
