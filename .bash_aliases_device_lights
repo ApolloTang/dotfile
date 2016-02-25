@@ -17,9 +17,10 @@ alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 
 #/ Note -----------------------------------------------------------------
 
-alias nim1='cd $d_conf/nimbus && less ideas_01.txt'
-alias nim1g="less $d_conf/nimbus/ideas_01.txt  | grep "
-
+alias food_cd="cd ~/_b/subject2/food/Food_3/nimbus"
+alias food_grep="less ~/_b/subject2/food/Food_3/nimbus/ideas_01.txt | grep "
+alias letter_open="open ~/_b/subject2/discovery/note-to-self/corresponding/Letter_3/Letter_a/letter_current/letter_a.xls"
+alias letter_cd="cd ~/_b/subject2/discovery/note-to-self/corresponding/Letter_3/Letter_a/letter_current/"
 
 
 ################################################
