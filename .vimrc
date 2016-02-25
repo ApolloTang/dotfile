@@ -6,6 +6,16 @@
 " learning bookmark
 " http://learnvimscriptthehardway.stevelosh.com/chapters/08.html
 "
+" vim-plug { ---------------------------------------
+    call plug#begin('~/.vim/plugged')
+        " Make sure you use single quotes
+        Plug 'junegunn/vim-easy-align'
+    call plug#end()
+    " Start interactive EasyAlign in visual mode (e.g. vipga)
+    xmap ga <Plug>(EasyAlign)
+    " Start interactive EasyAlign for a motion/text object (e.g. gaip)
+    nmap ga <Plug>(EasyAlign)
+" }
 
 call pathogen#infect()
 
