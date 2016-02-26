@@ -139,7 +139,9 @@ call pathogen#infect()
 
     "\ Display trailing white= spaces
     set encoding=utf-8
-    set list listchars=tab:·\ ,trail:·
+    set list
+    "set listchars=tab:·\ ,trail:·,eol:┆
+    set listchars=tab:·\ ,trail:·
 
 
     "\ ---------------
