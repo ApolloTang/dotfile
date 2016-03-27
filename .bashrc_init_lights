@@ -3,7 +3,7 @@
 
 export IAM=lights
 export PLATFORM=mac
-export XDG_CONFIG_HOME="~/.config"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 ## Directories -----------------------------------------------------------
 export dir_template=/Users/apollotang/Aa/2-git-repo/mirror-to-github/re-useable/template/
