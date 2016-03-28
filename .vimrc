@@ -10,11 +10,20 @@
     call plug#begin('~/.vim/plugged')
         " Make sure you use single quotes
         Plug 'junegunn/vim-easy-align'
+        Plug 'mxw/vim-jsx'
     call plug#end()
-    " Start interactive EasyAlign in visual mode (e.g. vipga)
-    xmap ga <Plug>(EasyAlign)
-    " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-    nmap ga <Plug>(EasyAlign)
+
+    "/ junegunn/vim-easy-align {
+        "/ Start interactive EasyAlign in visual mode (e.g. vipga)
+        xmap ga <Plug>(EasyAlign)
+        "/ Start interactive EasyAlign for a motion/text object (e.g. gaip)
+        nmap ga <Plug>(EasyAlign)
+    "/ }
+
+    "/ mxw/vim-jsx {
+        "/ treat .js as .jsx
+        let g:jsx_ext_required = 0
+    "/ }
 " }
 
 call pathogen#infect()
@@ -467,10 +476,10 @@ command! W :wa
 "nnoremap <leader><leader> <c-^>
 
 
-" Map braces and brackets
-" imap [ []<left>
-" imap ( ()<left>
-" imap { {}<left>
+"/ Map braces and brackets
+imap [ []<left>
+imap ( ()<left>
+imap { {}<left>
 
 
 " Open line (insert mode)
