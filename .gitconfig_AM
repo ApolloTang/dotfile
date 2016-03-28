@@ -1,12 +1,12 @@
 [user]
-    name = Apollo Tang
-    email = tang.apollo@gmail.com
+	name = Apollo Tang
+	email = tang.apollo@gmail.com
 [color]
     ui = auto
 [push]
     default = simple
 [core]
-    excludesfile = /Users/apollo/.gitignore_global
+	excludesfile = /Users/apollo/.gitignore_global
     editor = mvim --nofork
 [merge]
     tool = kdiff3
@@ -19,10 +19,10 @@
 [alias]
     co = checkout
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /Users/apollo/Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Users/apollo/Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true
 [filter "media"]
     required = true
