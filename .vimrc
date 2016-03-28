@@ -216,11 +216,54 @@ call pathogen#infect()
 " Indentation setting { --------------------------------------------------
     "set noexpandtab                  " do not use space as tabs
     set expandtab                    " use space as tabs
+
     set tabstop=4                    " Global tab width.
     set shiftwidth=4                 " And again, related.
     set softtabstop=4
 
-    " ##  Indentation short cut
+    "/ The following snippet of vimscript allows you to assign
+    "/ the same value to tabstop, softtabstop and shiftwidth
+    "/ simultaneously.
+    command! -nargs=* Stab call Stab()
+    function! Stab()
+        let l:tabstop = 1 * input('set tabstop = softtabstop = shiftwidth = ')
+        if l:tabstop > 0
+            let &l:sts = l:tabstop
+            let &l:ts = l:tabstop
+            let &l:sw = l:tabstop
+        endif
+        call SummarizeTabs()
+    endfunction
+
+    function! SummarizeTabs()
+        try
+            echohl ModeMsg
+            echon 'tabstop='.&l:ts
+            echon ' shiftwidth='.&l:sw
+            echon ' softtabstop='.&l:sts
+            if &l:et
+                echon ' expandtab'
+            else
+                echon ' noexpandtab'
+            endif
+        finally
+            echohl None
+        endtry
+    endfunction
+    "/ To invoke Stab(), go into normal mode (by pressing
+    "/ escape) then run:
+    "/      :Stab
+    "/ Then hit enter. You will see this:
+    "/      set tabstop = softtabstop = shiftwidth =
+    "/ Enter the size that you want to assign to those settings
+    "/ and hit enter.  A summary line then shows the value of
+    "/ each setting, as well as showing whether or not expandtab
+    "/ is enabled. If you hit enter without providing a value
+    "/ then the tab settings are not affected.
+    "/
+    "/ ref: http://vimcasts.org/episodes/tabs-and-spaces/
+
+    "/ Indentation short cut:
     vmap << <gv
     vmap >> >gv
 " }
