@@ -3,6 +3,7 @@
 
 export IAM=AM
 export PLATFORM=mac
+export XDG_CONFIG_HOME="/Users/apollo/.config"
 
 ## Directories -----------------------------------------------------------
 export dir_template=/Users/apollo/dev2/re-useable/template/
