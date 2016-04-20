@@ -402,6 +402,11 @@ command! W :wa
     nnoremap <c-l> <c-w>l
 " }
 
+"/ Interact with shell { --------------------------------------------------
+    "/ Next command open Terminal at pwd via npm module 'ttab'
+    "/ to install ttab: sudo npm install ttab -g
+    command! -nargs=* Term !ttab -d `pwd`
+"/ }
 
 " ## Wrapping behaviour { ------------------------------------------------
     set nowrap nolinebreak list
