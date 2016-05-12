@@ -11,6 +11,16 @@ PATH="$HOME/.nvm":$PATH
 #PATH=$PATH:"$HOME/Applications/kdiff3.app/Contents/MacOS"
 export PATH
 
+
+## for nvm
+export NVM_DIR="/Users/apollo/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+##/ Project directory
+export sushi1='/Users/apollo/dev/adsushi-1/app-v3/scripts/'
+export sushi2='/Users/apollo/dev/adsushi-2/app-v3/scripts/'
+
 ###################################
 #echo 'done reading .bashrc_AM'
 

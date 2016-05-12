@@ -13,9 +13,11 @@ PATH=/Users/apollotang/opt/local/anaconda2/bin:$PATH
 PATH=$PATH:"/usr/local/Cellar/neovim-dot-app/HEAD/bin/gnvim"
 export PATH
 
+
 ## for nvm
 export NVM_DIR="/Users/apollotang/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 
 ###################################
 #echo '.bashrc_lights reading done'

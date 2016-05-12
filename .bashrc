@@ -10,7 +10,7 @@ if [ -f ~/.bashrc_init ]; then
 fi
 
 ## Variable --------------------------------------------------------------
-export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"
+export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"  #TODO move this into .bashrc_init_light ?
 
 ## Tool ------------------------------------------------------------------
 export editor_main=mvim
@@ -25,7 +25,7 @@ PATH="$HOME/bin":$PATH
 ##
 ## @NOTE: normal order: the last one will be appended to the path
 ##
-PATH=$PATH:"$HOME/opt/local/scala-2.11.2/bin"
+PATH=$PATH:"$HOME/opt/local/scala-2.11.2/bin"   #TODO move this into .bashrc_init_light ?
 PATH=$PATH:"$HOME/opt/local/adt-bundle-mac-x86_64-20140702/sdk/platform-tools"
 PATH=$PATH:"$HOME/opt/devtools/autotools-bin/bin"
 export PATH
@@ -186,3 +186,4 @@ fi
 
 ##################################################
 #echo '.bashrc reading done'
+
