@@ -36,7 +36,12 @@ export DT=$HOME/Desktop/
 
 
 # Colors ----------------------------------------------------------
-export TERM=xterm-color
+#export TERM=xterm-color
+#/ comment out the above apprently it is causing tmux to overwrite instead of insert
+#/ https://groups.google.com/forum/#!topic/tmux-users/HcKnBs5uJds
+#/ http://unix.stackexchange.com/questions/1045/getting-256-colors-to-work-in-tmux
+export TERM=xterm-256color
+
 
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 
@@ -137,6 +142,8 @@ fi
 
 ## Use Vim mode ----------------------------------------------------------
 set -o vi
+
+
 
 ## X11 -------------------------------------------------------------------
 #/ do not use the following on osx
