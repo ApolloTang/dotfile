@@ -7,6 +7,9 @@
 " http://learnvimscriptthehardway.stevelosh.com/chapters/08.html
 "
 " vim-plug { ---------------------------------------
+    "/ https://github.com/junegunn/vim-plug
+    "/ To install plugin, Reload .vimrc and :PlugInstall to install plugins.
+
     call plug#begin('~/.vim/plugged')
         " Make sure you use single quotes
         Plug 'junegunn/vim-easy-align'
@@ -14,6 +17,8 @@
         Plug 'mxw/vim-jsx'
         "/ mxw/vim-jsx required pangloss/vim-javascript
         "/ see: https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
+
+        Plug 'vim-scripts/c.vim'
     call plug#end()
 
     "/ junegunn/vim-easy-align {
