@@ -19,5 +19,9 @@ export NVM_DIR="/Users/apollotang/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
+##/ Project directory
+export sushi1='/Users/apollotang/_a/y_AM/AM-dev/adsushi/app-v3/scripts/'
+export sushi2='/Users/apollotang/_a/y_AM/AM-dev/adsushi-2/app-v3/scripts/'
+
 ###################################
 #echo '.bashrc_lights reading done'
