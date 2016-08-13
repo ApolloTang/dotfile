@@ -1,6 +1,7 @@
 
 
-ttab
-cmus
-mc
+ttab // launch terminal
+cmus // a music player
+mc   // midnight commander
+
 
