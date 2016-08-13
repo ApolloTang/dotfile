@@ -15,8 +15,11 @@ ln -s ~/configuration/dotfile/.bashrc
 ln -s ~/configuration/dotfile/.bashrc_init_light .bashrc_init
 ln -s ~/configuration/dotfile/.bashrc_init_AM    .bashrc_init
 
-ln -s ~/configuration/dotfile/.bashrc_lights .bashrc_device
-ln -s ~/configuration/dotfile/.bashrc_AM .bashrc_device
+ln -s ~/configuration/dotfile/.bashrc_lights .bashrc_device       //<-- deprecated
+ln -s ~/configuration/dotfile/.bashrc_device_lights .bashrc_device
+
+ln -s ~/configuration/dotfile/.bashrc_AM .bashrc_device          //<-- te deprecated
+ln -s ~/configuration/dotfile/.bashrc_device_AM .bashrc_device   //<-- to add
 
 ln -s ~/configuration/dotfile/.bash_aliases
 
@@ -37,16 +40,11 @@ ln -s ~/configuration/dotfile/.vimrc
 ln -s ~/configuration/dotfile/.bash_aliases_svn
 
 
-
-ln -s ~/configuration/dotfile/.AM_bashrc .bashrc
-ln -s ~/configuration/dotfile/.AM_bash_profile .bash_profile
 ln -s ~/configuration/dotfile/.bashrc_AM .bashrc_AM
 
 
 
 ------ note ------
 todelete :
-.AM_bash_profile
-.AM_bashrc
 
 
