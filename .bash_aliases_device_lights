@@ -14,8 +14,8 @@ alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 
 #/ Note ----------------------------------------
 
-alias food-cd="cd ~/_b/subject2/food/Food_3/nimbus"
-alias food-grep="less ~/_b/subject2/food/Food_3/nimbus/ideas_01.txt | grep "
+alias food-cd="cd ~/_b/subject2/food/Food_3/current/nimbus"
+alias food-grep="less ~/_b/subject2/food/Food_3/current/nimbus/ideas_01.txt | grep "
 alias letter-open="open ~/_b/subject2/discovery/note-to-self/corresponding/Letter_3/Letter_a/letter_current/letter_a.xls"
 alias letter-cd="cd ~/_b/subject2/discovery/note-to-self/corresponding/Letter_3/Letter_a/letter_current/"
 alias info-me="less ~/_a/p/h3/info/My-info.txt"
