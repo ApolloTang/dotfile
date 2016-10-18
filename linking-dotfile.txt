@@ -15,8 +15,9 @@ ln -s ~/configuration/dotfile/.bashrc
 ln -s ~/configuration/dotfile/.bashrc_init_light .bashrc_init
 ln -s ~/configuration/dotfile/.bashrc_init_AM    .bashrc_init
 
-ln -s ~/configuration/dotfile/.bashrc_lights .bashrc_device
-ln -s ~/configuration/dotfile/.bashrc_AM .bashrc_device
+ln -s ~/configuration/dotfile/.bashrc_device_lights .bashrc_device
+ln -s ~/configuration/dotfile/.bashrc_AM .bashrc_device          //<-- to deprecated [1]
+ln -s ~/configuration/dotfile/.bashrc_device_AM .bashrc_device   //<-- to add to AM  [2]
 
 ln -s ~/configuration/dotfile/.bash_aliases
 
@@ -37,16 +38,14 @@ ln -s ~/configuration/dotfile/.vimrc
 ln -s ~/configuration/dotfile/.bash_aliases_svn
 
 
-
-ln -s ~/configuration/dotfile/.AM_bashrc .bashrc
-ln -s ~/configuration/dotfile/.AM_bash_profile .bash_profile
 ln -s ~/configuration/dotfile/.bashrc_AM .bashrc_AM
 
 
 
 ------ note ------
-todelete :
-.AM_bash_profile
-.AM_bashrc
+toDo  : [1][2]
+toDo  : rename .gitconfig to dot_gitconfig
+toDo  : rename .gitconfig_global to dot_gitconfig_global
+
 
 
