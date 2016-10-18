@@ -723,8 +723,48 @@ nmap <C-Down> ]e`[            " Bubling down one line
     " ref: http://learnvimscriptthehardway.stevelosh.com/chapters/08.html
 " }
 
+" NERDTREE {--------------------------------------------------------------
+    " [note] The following does not work
+    "
+    " function! NERDTreeMountPEdit()
+    "     " from:> http://stackoverflow.com/questions/28396256/nerdtree-live-preview-like-sublime-sidebar
+    "     if exists("g:loaded_nerdree_live_preview_mapping")
+    "       finish
+    "     endif
+    "     let g:loaded_nerdree_live_preview_mapping = 1
+    "
+    "     call NERDTreeAddKeyMap({
+    "           \ 'key':           '<up>',
+    "           \ 'callback':      'NERDTreeLivePreview',
+    "           \ 'quickhelpText': 'preview',
+    "           \ })
+    "
+    "     function! NERDTreeLivePreview()
+    "       " Get the path of the item under the cursor if possible:
+    "       let current_file = g:NERDTreeFileNode.GetSelected()
+    "
+    "       if current_file == {}
+    "         return
+    "       else
+    "         exe 'vert pedit '.current_file.path.str()
+    "       endif
+    "     endfunction
+    " endfunction
+" }
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/generated-public/*,*/node_modules/*
+" Buffer {----------------------------------------------------------------
+    " from:> http://stackoverflow.com/questions/8450919/how-can-i-delete-all-hidden-buffers
+    function! DeleteHiddenBuffers()
+        let tpbl=[]
+        call map(range(1, tabpagenr('$')), 'extend(tpbl, tabpagebuflist(v:val))')
+        for buf in filter(range(1, bufnr('$')), 'bufexists(v:val) && index(tpbl, v:val)==-1')
+            silent execute 'bwipeout' buf
+        endfor
+    endfunction
+"}
+
+
+"Deric shit that does not work:> set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/generated-public/*,*/node_modules/*
 " Windows ('noshellslash')
 
 " END .vimrc
