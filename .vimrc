@@ -161,14 +161,22 @@ call pathogen#infect()
     set listchars=tab:·\ ,trail:·
 
 
+
     "\ ---------------
     "\  Status
     "\ ---------------
     set laststatus=2                        " Show the status line all the time
 
+    function! WindowNumber()
+        "\ Get number number.
+        "\ http://stackoverflow.com/questions/6403716/shortcut-for-moving-between-vim-windows
+        let str=tabpagewinnr(tabpagenr())
+        return str
+    endfunction
+
     "\ Status information at bottom of screen
     " set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-    set statusline=%n\|%<%.99f\ %=%10(%H%W%M%R\/%l\/%c\/%v\%)
+    set statusline=%n\|%{WindowNumber()}\|%<%.99f\ %=%10(%H%W%M%R\/%l\/%c\/%v\%)
 
     "\ Status line color based on mode
     "\ Ref: http://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-colour
@@ -405,6 +413,17 @@ command! W :wa
     nnoremap <c-k> <c-w>k
     nnoremap <c-h> <c-w>h
     nnoremap <c-l> <c-w>l
+
+
+    "\ ----------------
+    "\  Jump to window
+    "\ ----------------
+    "\ http://stackoverflow.com/questions/6403716/shortcut-for-moving-between-vim-windows
+    let i = 1
+    while i <= 19
+        execute 'nnoremap <Leader>' . i . ' :' . i . 'wincmd w<CR>'
+        let i = i + 1
+    endwhile
 " }
 
 "/ Interact with shell { --------------------------------------------------
