@@ -65,6 +65,10 @@ alias kp="ps auxwww"
 #/ using sed to build dir tree  http://www.centerkey.com/tree/
 alias sed-tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 
+#/  Application ---------------------------------------------------------
+
+alias k3="kdiff3 "
+
 #/ Split path into line -------------------------------------------------
 #/ for linux
 #  alias info-path='echo $PATH | sed s/:/\\n/g | less'
