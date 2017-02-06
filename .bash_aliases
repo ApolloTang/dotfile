@@ -54,6 +54,8 @@ alias gl='git log --all --oneline --decorate -15 '
 alias gldl="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(cyan) %cD %Creset %s\""
 alias gld="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(cyan) %cD %Creset %s\" -15"
 
+alias gmerge='git merge --no-ff '
+
 
 #/  Utitlities -----------------------------------------------------------
 alias aliasl="alias | less"
