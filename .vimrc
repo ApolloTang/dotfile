@@ -18,6 +18,9 @@
         "/ mxw/vim-jsx required pangloss/vim-javascript
         "/ see: https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
 
+        Plug 'brooth/far.vim'
+        " Find and replace text through multiple files.
+
         Plug 'vim-scripts/c.vim'
     call plug#end()
 
