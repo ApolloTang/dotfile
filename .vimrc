@@ -14,14 +14,21 @@
         " Make sure you use single quotes
         Plug 'junegunn/vim-easy-align'
 
-        Plug 'mxw/vim-jsx'
-        "/ mxw/vim-jsx required pangloss/vim-javascript
-        "/ see: https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
+        Plug 'scrooloose/nerdtree'
+        Plug 'tpope/vim-surround'
+        Plug 'tomtom/tcomment_vim'
 
         Plug 'brooth/far.vim'
-        " Find and replace text through multiple files.
+            "/ Find and replace text through multiple files.
+
+        Plug 'pangloss/vim-javascript'
+        Plug 'mxw/vim-jsx'
+            "/ mxw/vim-jsx required pangloss/vim-javascript
+            "/ see: https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
 
         Plug 'vim-scripts/c.vim'
+
+        Plug 'Chiel92/vim-autoformat'
     call plug#end()
 
     "/ junegunn/vim-easy-align {
