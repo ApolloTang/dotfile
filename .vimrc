@@ -790,6 +790,14 @@ nmap <C-Down> ]e`[            " Bubling down one line
             silent execute 'bwipeout' buf
         endfor
     endfunction
+
+    "Close current buffer without close current window
+    "from:> http://vim.wikia.com/wiki/Deleting_a_buffer_without_closing_the_window
+    nnoremap <leader>cc :Bclose<cr>
+    "Other available commands:
+    "   :Bclose         " Close buffer in current window.
+    "   :Bclose N       " Close buffer number N (as shown by :ls).
+    "   :Bclose Name    " Close buffer named Name (as shown by :ls).
 "}
 
 
