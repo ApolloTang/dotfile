@@ -624,7 +624,7 @@ nmap <C-Down> ]e`[            " Bubling down one line
 
 
 " { edit .vimrc file ------------------------------------------------------
-    nnoremap <leader>ev :split $MYVIMRC<cr>
+    nnoremap <leader>ev :vsplit $MYVIMRC<cr>
     nnoremap <leader>sv :source $MYVIMRC<cr>
 " }
 
