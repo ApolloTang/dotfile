@@ -389,11 +389,15 @@ autocmd! FileType mkd setlocal syn=off
 " au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
 augroup END
 
-" code folding {----------------------------------------------------------
+" Code folding {----------------------------------------------------------
     set fdm=indent
     "highlight Folded guibg=black          " color for codefolding line
     "highlight Folded guibg=gray14       " color for codefolding line
     highlight Folded guifg=gray25 guibg=gray10
+
+    "/ All folds are closed by default, the following set the initial folding level
+    "/ /From:> http://vim.wikia.com/wiki/All_folds_open_when_opening_a_file
+    set foldlevelstart=20
 
     "/ Syntax folding for Javascript
     "/ https://github.com/jelera/vim-javascript-syntax
