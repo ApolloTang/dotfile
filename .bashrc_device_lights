@@ -23,5 +23,9 @@ export NVM_DIR="/Users/apollotang/.nvm"
 export sushi1='/Users/apollotang/_a/y_AM/AM-dev/adsushi/app-v3/scripts/'
 export sushi2='/Users/apollotang/_a/y_AM/AM-dev/adsushi-2/app-v3/scripts/'
 
+
+##/ Run things
+archey
+
 ###################################
 #echo '.bashrc_lights reading done'

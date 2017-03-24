@@ -55,6 +55,7 @@ alias gldl="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C
 alias gld="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(cyan) %cD %Creset %s\" -15"
 
 alias gmerge='git merge --no-ff '
+alias gdfni='git diff --no-index '
 
 
 #/  Utitlities -----------------------------------------------------------
