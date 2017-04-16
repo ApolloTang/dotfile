@@ -1,6 +1,6 @@
 [user]
-    name = Apollo Tang
-    email = tang.apollo@gmail.com
+	name = Apollo Tang
+	email = tang.apollo@gmail.com
 [color]
     ui = auto
 [push]
@@ -19,10 +19,10 @@
 [alias]
     co = checkout
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	cmd = /Users/apollotang/Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
+	path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Users/apollotang/Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true
 [filter "media"]
 	required = true
