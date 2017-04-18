@@ -804,8 +804,41 @@ nmap <C-Down> ]e`[            " Bubling down one line
     "   :Bclose Name    " Close buffer named Name (as shown by :ls).
 "}
 
+" Yank filename/dirname {-------------------------------------------------
+    " copy result to the system clipboard and echo the result
+    " the cb> prompt means the clipboard
+    "
+    " File Name, eg. init.vim
+    map <Leader>fn :let @+ = expand("%:t") \| echo 'cb> ' . @+<CR>
+    " File Path, eg. /home/user/nvim/init.vim
+    map <Leader>fp :let @+ = expand("%:p") \| echo 'cb> ' . @+<CR>
+    " Directory Path, eg. /home/user/nvim
+    map <Leader>dp :let @+ = expand("%:p:h") \| echo 'cb> ' . @+<CR>
+    " Directory Name, eg. nvim
+    map <Leader>dn :let @+ = expand("%:p:h:t") \| echo 'cb> ' . @+<CR>
 
-"Deric shit that does not work:> set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/generated-public/*,*/node_modules/*
+    " Ref: http://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim/37192216#37192216
+" }
+
+" Working with Far plugin {
+    " Change search path to present working direcotry
+    if !WINDOWS()
+        "echom 'Runtime envrionment: Not windows'
+        map <Leader>fd :let g:far#cwd = system('pwd')
+    endif
+    if WINDOWS()
+        "echom 'Runtime envrionment: Windows'
+        map <Leader>fd :let g:far#cwd = system('cd')
+    endif
+    if OSX()
+        "echom 'Runtime envrionment: OSX'
+    endif
+    if LINUX()
+        "echom 'Runtime envrionment: Linux'
+    endif
+" }
+
+" Deric shit that does not work:> set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/generated-public/*,*/node_modules/*
 " Windows ('noshellslash')
 
 " END .vimrc
