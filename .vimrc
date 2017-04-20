@@ -29,7 +29,7 @@
         Plug 'vim-scripts/c.vim'
 
         Plug 'Chiel92/vim-autoformat'
-        Plug 'vim-syntastic/syntastic'
+        " Plug 'vim-syntastic/syntastic'
     call plug#end()
 
     "/ junegunn/vim-easy-align {
@@ -253,9 +253,9 @@ call pathogen#infect()
     "set noexpandtab                  " do not use space as tabs
     set expandtab                    " use space as tabs
 
-    set tabstop=2                    " Global tab width.
-    set shiftwidth=2                 " And again, related.
-    set softtabstop=2
+    set tabstop=4                    " Global tab width.
+    set shiftwidth=4                 " And again, related.
+    set softtabstop=4
 
     "/ The following snippet of vimscript allows you to assign
     "/ the same value to tabstop, softtabstop and shiftwidth
@@ -839,19 +839,19 @@ nmap <C-Down> ]e`[            " Bubling down one line
     endif
 " }
 
-" Syntastic plugin { ----------------------------------------
-    set statusline+=%#warningmsg#
-    set statusline+=%{SyntasticStatuslineFlag()}
-    set statusline+=%*
-
-    let g:syntastic_always_populate_loc_list = 1
-    let g:syntastic_auto_loc_list = 1
-    let g:syntastic_check_on_open = 1
-    let g:syntastic_check_on_wq = 0
-
-    let g:syntastic_javascript_checkers=['standard']
-    let g:syntastic_javascript_standard_exec = 'semistandard'
-" }
+" " Syntastic plugin { ----------------------------------------
+"     set statusline+=%#warningmsg#
+"     set statusline+=%{SyntasticStatuslineFlag()}
+"     set statusline+=%*
+"
+"     let g:syntastic_always_populate_loc_list = 1
+"     let g:syntastic_auto_loc_list = 1
+"     let g:syntastic_check_on_open = 1
+"     let g:syntastic_check_on_wq = 0
+"
+"     let g:syntastic_javascript_checkers=['standard']
+"     let g:syntastic_javascript_standard_exec = 'semistandard'
+" " }
 
 
 " Deric shit that does not work:> set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/generated-public/*,*/node_modules/*
