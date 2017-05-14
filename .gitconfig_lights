@@ -1,12 +1,12 @@
 [user]
-	name = Apollo Tang
-	email = tang.apollo@gmail.com
+    name = Apollo Tang
+    email = tang.apollo@gmail.com
 [color]
     ui = auto
 [push]
     default = simple
 [core]
-	excludesfile = /Users/apollotang/.gitignore_global
+  excludesfile = /Users/apollotang/.gitignore_global
     editor = mvim --nofork
 [merge]
     tool = kdiff3
@@ -19,16 +19,16 @@
 [alias]
     co = checkout
 [difftool "sourcetree"]
-	cmd = /Users/apollotang/Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
-	path =
+  cmd = /Users/apollotang/Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /Users/apollotang/Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-	trustExitCode = true
+  cmd = /Users/apollotang/Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+  trustExitCode = true
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 [filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
