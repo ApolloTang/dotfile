@@ -253,9 +253,9 @@ call pathogen#infect()
     "set noexpandtab                  " do not use space as tabs
     set expandtab                    " use space as tabs
 
-    set tabstop=4                    " Global tab width.
-    set shiftwidth=4                 " And again, related.
-    set softtabstop=4
+    set tabstop=2                    " Global tab width.
+    set shiftwidth=2                 " And again, related.
+    set softtabstop=2
 
     "/ The following snippet of vimscript allows you to assign
     "/ the same value to tabstop, softtabstop and shiftwidth
