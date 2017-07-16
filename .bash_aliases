@@ -131,6 +131,10 @@ alias vim-c-diff='diff $d_conf/vimrc/apollotang.vim /Users/apollotang/.vim/color
 #list dot files
 alias find_ln_dotfile='find . -name ".*" -type l -maxdepth 1 -exec ls -al {} +'
 
+# ------------------------------------------------------------------
+# React Native
+#
+alias rn='react-native '
 
 ################################################
 #echo '.bash_aliases reading done'
