@@ -27,8 +27,12 @@
             "/ see: https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
 
         Plug 'vim-scripts/c.vim'
+        Plug 'vim-scripts/applescript.vim'
 
         Plug 'Chiel92/vim-autoformat'
+
+        Plug 'cjrh/vim-conda'
+
         " Plug 'vim-syntastic/syntastic'
     call plug#end()
 
