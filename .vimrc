@@ -458,7 +458,7 @@ command! W :wa
     command! -nargs=* Wrapoff set nowrap nolinebreak list
 
     " ## Break long line at 60 col
-    nnoremap <leader>y 060lwbels<CR><ESC>
+    nnoremap <leader>y 060lf i<CR><ESC>
 
     "/ mapping to make movements operate on 1 screen line in wrap mode
     function! ScreenMovement(movement)
