@@ -77,7 +77,7 @@ alias k3="kdiff3 "
 #  alias info-path='echo $PATH | sed s/:/\\n/g | less'
 #/   ref: stackoverflow.com/questions/18234378/using-sed-to-split-a-string-with-a-delimiter
 #/  for osx
-alias info-path="echo $PATH | sed 's/:/\\`echo -e '\n\r'`/g' | cat"  #for osx
+# alias info-path="echo $PATH | sed 's/:/\\`echo -e '\n\r'`/g' | cat"  #for osx
 #/  in the above, not sure why "\\" before first "`" but not b4 the second "`"
 #/  ref http://stackoverflow.com/questions/723157/how-to-insert-a-newline-in-front-of-a-pattern
 
